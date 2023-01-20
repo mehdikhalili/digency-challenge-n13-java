@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.20.0.final using JasperReports Library version 6.20.0-2bc7ab61c56f459e8176eb05c7705e145cd400ad  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="carte_professionnelle" pageWidth="325" pageHeight="204" orientation="Landscape" columnWidth="305" leftMargin="10" rightMargin="10" topMargin="10" bottomMargin="10" uuid="287dd5cb-182d-4cfa-b301-f4ad6c132ed5">
+    <field name="id" class="java.lang.Long">
+    </field>
+    <field name="cin" class="java.lang.String">
+    </field>
+    <field name="dateNaissanceStr" class="java.lang.String">
+    </field>
+    <field name="image" class="java.lang.String">
+    </field>
+    <field name="nom" class="java.lang.String">
+    </field>
+    <field name="nomAr" class="java.lang.String">
+    </field>
+    <field name="prenom" class="java.lang.String">
+    </field>
+    <field name="prenomAr" class="java.lang.String">
+    </field>
+    <field name="profession" class="java.lang.String">
+    </field>
+    <pageHeader>
+        <band height="22" splitType="Stretch">
+            <staticText>
+                <reportElement x="0" y="0" width="140" height="20" uuid="6e2e8594-bdff-4342-a2d6-b8c802db8fde">
+                    <property name="com.jaspersoft.studio.unit.height" value="px"/>
+                </reportElement>
+                <textElement verticalAlignment="Bottom" markup="none">
+                    <font size="10"/>
+                </textElement>
+                <text><![CDATA[CARTE PROFESSIONNELLE]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="170" y="0" width="130" height="20" uuid="4b41b507-56c2-4349-80ba-a662ac2ff421">
+                    <property name="com.jaspersoft.studio.unit.height" value="px"/>
+                </reportElement>
+                <textElement textAlignment="Right" verticalAlignment="Bottom">
+                    <font size="12"/>
+                </textElement>
+                <text><![CDATA[البطاقة المهنية]]></text>
+            </staticText>
+        </band>
+    </pageHeader>
+    <detail>
+        <band height="162" splitType="Stretch">
+            <image>
+                <reportElement x="0" y="26" width="100" height="100" uuid="c38e104e-ec58-4f54-aeb0-90af042d2bd3">
+                    <property name="com.jaspersoft.studio.unit.height" value="px"/>
+                    <property name="com.jaspersoft.studio.unit.y" value="px"/>
+                </reportElement>
+                <imageExpression><![CDATA[$F{image}]]></imageExpression>
+            </image>
+            <textField>
+                <reportElement x="0" y="10" width="100" height="16" uuid="f512ea49-e0fc-4c94-9d78-0fe36861b3e6"/>
+                <textElement textAlignment="Center" verticalAlignment="Middle">
+                    <font size="9"/>
+                </textElement>
+                <textFieldExpression><![CDATA["N°: "+$F{id}]]></textFieldExpression>
+            </textField>
+            <staticText>
+                <reportElement x="250" y="34" width="50" height="15" uuid="6f82f789-81e0-4a96-a94f-fb4936b72810">
+                    <property name="com.jaspersoft.studio.unit.height" value="px"/>
+                </reportElement>
+                <textElement textAlignment="Right">
+                    <font size="8"/>
+                </textElement>
+                <text><![CDATA[الإسم الشخصي :]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="250" y="54" width="50" height="15" uuid="97dc0c8b-355b-4b05-88fd-c07e796fd60d">
+                    <property name="com.jaspersoft.studio.unit.height" value="px"/>
+                </reportElement>
+                <textElement textAlignment="Right">
+                    <font size="8"/>
+                </textElement>
+                <text><![CDATA[الإسم العائلي :]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="250" y="74" width="50" height="15" uuid="c9c4b52c-d71f-4864-bca0-c3b6ee0641ad">
+                    <property name="com.jaspersoft.studio.unit.height" value="px"/>
+                </reportElement>
+                <textElement textAlignment="Right">
+                    <font size="8"/>
+                </textElement>
+                <text><![CDATA[تاريخ الإزدياد :]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="250" y="94" width="50" height="15" uuid="48e94b9e-c6b8-4ab8-8f01-af5ec932a352">
+                    <property name="com.jaspersoft.studio.unit.height" value="px"/>
+                </reportElement>
+                <textElement textAlignment="Right">
+                    <font size="8"/>
+                </textElement>
+                <text><![CDATA[المهنة :]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="110" y="34" width="40" height="15" uuid="389af96d-0040-4a93-9c32-98be4def6fa8">
+                    <property name="com.jaspersoft.studio.unit.height" value="px"/>
+                </reportElement>
+                <textElement textAlignment="Left">
+                    <font size="8"/>
+                </textElement>
+                <text><![CDATA[Prénom :]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="110" y="54" width="40" height="15" uuid="6931143c-1db3-4389-85a0-d4a94f96360e">
+                    <property name="com.jaspersoft.studio.unit.height" value="px"/>
+                </reportElement>
+                <textElement textAlignment="Left">
+                    <font size="8"/>
+                </textElement>
+                <text><![CDATA[Nom :]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="110" y="74" width="70" height="15" uuid="04628069-e0c9-4bed-a9ba-549338e4d858">
+                    <property name="com.jaspersoft.studio.unit.height" value="px"/>
+                </reportElement>
+                <textElement textAlignment="Left">
+                    <font size="8"/>
+                </textElement>
+                <text><![CDATA[Date de naissance:]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="110" y="94" width="50" height="15" uuid="07c52402-e60b-4937-9900-0f58de5ab2bc">
+                    <property name="com.jaspersoft.studio.unit.height" value="px"/>
+                </reportElement>
+                <textElement textAlignment="Left">
+                    <font size="8"/>
+                </textElement>
+                <text><![CDATA[Profession :]]></text>
+            </staticText>
+            <textField>
+                <reportElement x="150" y="34" width="50" height="14" uuid="494524e8-69ef-4014-8d00-9b4508a6f3ae"/>
+                <textElement>
+                    <font size="8" isBold="true"/>
+                </textElement>
+                <textFieldExpression><![CDATA[$F{prenom}]]></textFieldExpression>
+            </textField>
+            <textField>
+                <reportElement x="150" y="54" width="50" height="14" uuid="16958818-92a5-43eb-817f-b2c43d2b6d78"/>
+                <textElement>
+                    <font size="8" isBold="true"/>
+                </textElement>
+                <textFieldExpression><![CDATA[$F{nom}]]></textFieldExpression>
+            </textField>
+            <textField>
+                <reportElement x="180" y="74" width="70" height="14" uuid="0aaf81b4-91ac-4275-934d-03a7219790e0"/>
+                <textElement textAlignment="Center">
+                    <font size="8" isBold="true"/>
+                </textElement>
+                <textFieldExpression><![CDATA[$F{dateNaissanceStr}]]></textFieldExpression>
+            </textField>
+            <textField>
+                <reportElement x="160" y="94" width="90" height="26" uuid="fe2a266d-a92a-447c-81d6-5f093d47fc64"/>
+                <textElement textAlignment="Center">
+                    <font size="8" isBold="true"/>
+                </textElement>
+                <textFieldExpression><![CDATA[$F{profession}]]></textFieldExpression>
+            </textField>
+            <textField>
+                <reportElement x="200" y="34" width="50" height="14" uuid="3c540aef-1876-499b-8565-61434d851c69"/>
+                <textElement textAlignment="Right">
+                    <font size="8" isBold="true"/>
+                </textElement>
+                <textFieldExpression><![CDATA[$F{prenomAr}]]></textFieldExpression>
+            </textField>
+            <textField>
+                <reportElement x="200" y="54" width="50" height="14" uuid="b944007b-fc42-4a03-bdbe-6c5ff8259649"/>
+                <textElement textAlignment="Right">
+                    <font size="8" isBold="true"/>
+                </textElement>
+                <textFieldExpression><![CDATA[$F{nomAr}]]></textFieldExpression>
+            </textField>
+            <componentElement>
+                <reportElement x="270" y="126" width="36" height="36" uuid="c5397b84-5fbc-4b8e-8f79-95b71b9a2b57">
+                    <property name="com.jaspersoft.studio.unit.margin" value="px"/>
+                    <property name="com.jaspersoft.studio.unit.width" value="px"/>
+                    <property name="com.jaspersoft.studio.unit.height" value="px"/>
+                </reportElement>
+                <jr:QRCode xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd" margin="0">
+                    <jr:codeExpression><![CDATA["nom: "+$F{nom}+", prenom: "+$F{prenom}+", cin: "+$F{cin}+", date_naissance: "+$F{dateNaissanceStr}]]></jr:codeExpression>
+                </jr:QRCode>
+            </componentElement>
+            <textField>
+                <reportElement x="0" y="126" width="100" height="16" uuid="65139be9-f30c-4bb9-9322-86ac1457062a"/>
+                <textElement textAlignment="Center" verticalAlignment="Middle">
+                    <font size="9" isBold="true"/>
+                </textElement>
+                <textFieldExpression><![CDATA[$F{cin}]]></textFieldExpression>
+            </textField>
+        </band>
+    </detail>
+</jasperReport>
